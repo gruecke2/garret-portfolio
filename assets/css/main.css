@@ -78,6 +78,37 @@
     .menu .nav-item.current > a {
       color: orange; }
 
+@media screen and (max-width: 768px) {
+  main {
+    align-items: center;
+    text-align: center; }
+    main .lg-heading {
+      line-height: 1;
+      margin-bottom: 1rem;
+      font-size: 4rem; }
+  ul.menu-nav, div.menu-branding {
+    float: none;
+    width: 100%;
+    min-height: 0; }
+    ul.menu-nav.show, div.menu-branding.show {
+      transform: translate3d(0, 0, 0); }
+  .menu-nav {
+    height: 75vh;
+    transform: translate3d(-100%, 0, 0);
+    font-size: 24px; }
+  .menu-branding {
+    height: 25vh;
+    transform: translate3d(100%, 0, 0); }
+    .menu-branding .portrait {
+      background: url();
+      width: 150px;
+      height: 150px; } }
+
+@media screen and (max-width: 500px) {
+  main#home h1 {
+    margin-top: 10vh;
+    font-size: 4rem; } }
+
 * {
   box-sizing: border-box; }
 
@@ -89,7 +120,7 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5; }
   body#bg-img {
-    background: url(../assets/images/refactoring-and-code-smells.jpg);
+    background: url(../images/refactoring-and-code-smells.jpg);
     background-attachment: fixed;
     background-size: cover; }
     body#bg-img .overlay {
@@ -108,8 +139,7 @@ h1, h2, h3 {
     font-size: 6rem; }
   h1.sm-heading, h2.sm-heading, h3.sm-heading {
     margin-bottom: 2rem;
-    padding: 0.2rem 1rem;
-    background: rgba(69, 69, 69, 0.5); }
+    padding: 0.2rem 1rem; }
 
 a {
   color: #fff;
@@ -125,7 +155,7 @@ header {
 
 main {
   padding: 4rem;
-  height: 100%; }
+  min-height: calc(100vh - 60px); }
   main .icons {
     margin-top: 1rem; }
     main .icons a {
@@ -149,3 +179,41 @@ main {
 
 .nav-item:nth-child(4) {
   transition-delay: 0.4s; }
+
+.bio {
+  font-size: 1.5rem; }
+
+.bio-item {
+  background: !important #515151;
+  padding: 0.5rem;
+  border-bottom: orange 5px solid; }
+
+#foot {
+  text-align: center;
+  padding: 1rem;
+  background: #2b2b2b;
+  height: 60px; }
+
+.projects img {
+  width: 100%;
+  border: 3px #fff solid; }
+  .projects img:hover {
+    opacity: 0.7;
+    border-color: orange;
+    transition: all 0.5s ease-out; }
+
+.btn, .btn-dark, .btn-light {
+  display: block;
+  padding: 0.5rem 1rem;
+  border: 0;
+  margin-bottom: 0.3rem; }
+  .btn:hover, .btn-dark:hover, .btn-light:hover {
+    background: orange; }
+
+.btn-dark {
+  background: black;
+  color: #fff; }
+
+.btn-light {
+  background: #c4c4c4;
+  color: #333; }
