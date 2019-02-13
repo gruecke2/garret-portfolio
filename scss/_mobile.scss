@@ -47,7 +47,7 @@
         transform: translate3d(100%,0,0);
 
         .portrait{
-            background: url();
+            background-image: url("../images/profilePic1.jpg");
             width: 150px;
             height: 150px;
         }
@@ -66,5 +66,12 @@
 
     #projectsGrid{
         grid-template-columns: repeat(1, 1fr);
+    }
+
+    #contact-col{
+        padding-left: 0;
+        padding-right: 0;
+        width: 100%;
+        font-size: inherit;
     }
 }
