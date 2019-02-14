@@ -81,15 +81,15 @@ main{
 }
 
 
-//ABOUT PAGE    ** Replaced with Bootstrap Grid **
-.about-info{
-    // display: grid;
-    // grid-template-areas: 
-    // 'bio-image bio bio'
-    // 'exp edu';
-    // grid-template-columns: repeat(2, 1fr);
-    // grid-gap: 30px;
-}
+// //ABOUT PAGE    ** Replaced with Bootstrap Grid **
+// .about-info{
+//     // display: grid;
+//     // grid-template-areas: 
+//     // 'bio-image bio bio'
+//     // 'exp edu';
+//     // grid-template-columns: repeat(2, 1fr);
+//     // grid-gap: 30px;
+// }
 
 .bio{
     font-size: 1.5rem;
@@ -114,9 +114,9 @@ main{
     grid-gap: 0.7rem;
     grid-template-columns: repeat(3, 1fr);
 
-    .item{
-        // width: 50vw;
-    }
+    // .item{
+    //     // width: 50vw;
+    // }
     
     img{
         width: 100%;
