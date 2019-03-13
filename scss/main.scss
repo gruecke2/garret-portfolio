@@ -1,6 +1,6 @@
 @import 'menu';
 @import 'config';
-@import 'mobile';
+
 
 *{
     box-sizing: border-box;
@@ -142,6 +142,45 @@ main{
     border-width: 3px;
     max-height: 306.16px;
     }
+
+    .item{
+        grid-auto-rows: 1fr;
+        grid-auto-columns: 1fr;
+    }
+}
+
+.img-container{
+    position: relative;
+    width: 100%;
+    margin-bottom: 2px;
+}
+
+.img-container:hover .project-overlay{
+    opacity: 1;
+}
+
+.project-overlay{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: inherit;
+  width: inherit;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #eee;
+}
+
+.project-description{
+    color: black;
+    font-size: 1.1rem;
+    position: absolute;
+    text-align: center;
+}
+
+.miniProjDesc{
+    margin-top: 0;
 }
 
 //Project Button Styles
@@ -179,3 +218,6 @@ main{
 
     }
 }
+
+
+@import 'mobile';
