@@ -174,13 +174,25 @@ main{
 
 .project-description{
     color: black;
-    font-size: 1.1rem;
+    // font-size: 1.1rem;
     position: absolute;
     text-align: center;
 }
 
 .miniProjDesc{
     margin-top: 0;
+    margin-bottom: 0;
+    text-align: justify;
+}
+
+.techList{
+    text-align: left;
+    -moz-column-count: 2;
+    -moz-column-gap: 20px;
+    -webkit-column-count: 2;
+    -webkit-column-gap: 20px;
+    column-count: 2;
+    column-gap: 20px;
 }
 
 //Project Button Styles
