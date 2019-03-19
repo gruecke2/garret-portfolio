@@ -10,7 +10,7 @@
 @include mediaLg{
     #projectsGrid{
         grid-template-columns: repeat(4, 1fr);
-    }
+    } 
 }
 
 @include mediaMd{
@@ -47,7 +47,7 @@
         transform: translate3d(100%,0,0);
 
         .portrait{
-            background-image: url("../images/bw_self_portrait.jpg");
+            background-image: url("../images/bw_self_portrait_small.jpg");
             width: 150px;
             height: 150px;
         }
@@ -81,13 +81,19 @@
         font-size: 3rem;
     }
 
-    #bioDesc{
-        text-align: justify;
+    #about{
+        font-size: 1.2rem;
     }
+
 }
 
 @include mediaXs{
     #projects{
-        padding: 0;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    main{
+        padding-top: 60px;
     }
 }
